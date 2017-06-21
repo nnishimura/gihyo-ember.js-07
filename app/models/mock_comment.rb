@@ -5,17 +5,20 @@ class MockComment < ActiveHash::Base
 
   delegate :as_json, to: :attributes
 
-  fields :text, :post_id
+  fields :date, :body, :post_id
 
   create id: 1,
-    text: 'はじめまして',
+    date: '2017/01/11 10:00',
+    body: 'Hi there',
     post_id: 1
 
   create id: 2,
-    text: '入門しました',
+    date: '2017/01/11 11:00',
+    body: 'I am a comment',
     post_id: 1
 
   create id: 3,
-    text: '詳しい説明を知りたいときはまず参考にします。',
+    date: '2017/01/11 12:00',
+    body: 'you can comment more below',
     post_id: 2
 end

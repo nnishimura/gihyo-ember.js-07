@@ -1,5 +1,5 @@
 object @post => :post
-attributes :id, :title, :body
+attributes :id, :title, :body, :imageUrl
 
 node :links do |post|
   {:comments => v4_post_comments_url(post)}

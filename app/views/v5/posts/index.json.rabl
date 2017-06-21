@@ -1,6 +1,6 @@
 object false
 node :posts do
-  @posts.as_json(only: %i(id title body))
+  @posts.as_json(only: %i(id title body imageUrl))
 end
 
 node :comments do

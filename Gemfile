@@ -13,7 +13,7 @@ gem 'active_hash'
 gem 'rabl'
 gem 'oj'
 gem 'pg'
-gem 'puma'
+gem 'puma','2.15'
 gem 'newrelic_rpm'
 
 group :development, :test do
