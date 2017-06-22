@@ -21,7 +21,8 @@ module V5
 
     def comment_params
       params.require('comment').permit(
-        :text,
+        :body,
+        :date,
         :post
       )
     end
